@@ -28,7 +28,7 @@
             height: 180px;
             border-radius: 50%;
             overflow: hidden;
-            border: 3px solid white;
+            border: 3px solid black;
         }
 
         .logo img {
@@ -168,20 +168,20 @@ nav {
 
 h2 {
     font-size: 2.5em;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 20px;
 }
 
 h3 {
     font-size: 1.8em;
-    color: #555;
+    color: #ffffff;
     margin: 30px 0 20px;
 }
 
 .main-text {
     font-size: 1.1em;
     line-height: 1.6;
-    color: #666;
+    color: #ffffff;
     margin-bottom: 30px;
 }
 
@@ -197,6 +197,7 @@ h3 {
     display: flex;
     align-items: center;
     gap: 10px;
+    color: white;
 }
 
 .check-icon {
@@ -208,16 +209,16 @@ h3 {
 .quote-button {
     padding: 15px 40px;
     font-size: 1.1em;
-    border: 2px solid #FFD700;
+    border: 2px solid #ffffff;
     background-color: transparent;
-    color: #333;
+    color: white;
     border-radius: 30px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .quote-button:hover {
-    background-color: #FFD700;
+    background-color: #ffffff;
     color: #000;
 }
 
@@ -756,30 +757,138 @@ nav {
             text-align: center;
         }
 
-        .contact-info {
-            margin-bottom: 20px;
-        }
+   /* Estilos del Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 3rem 2rem;
+    margin-top: auto;
+    border-radius: 0 0 15px 15px;
+}
 
-        .social-links {
-            margin-top: 20px;
-        }
+.contact-info {
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    color: white;
+}
 
-        .social-button {
-            background-color: #0b7e14;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-        }
+/* Sección de redes sociales */
+.social-section {
+    text-align: center;
+}
 
-        .instagram-icon {
-            width: 30px;
-            vertical-align: middle;
-            margin-left: 10px;
-        }
+.social-title {
+    font-size: 1.8em;
+    margin-bottom: 1.5rem;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    gap: 10px;
+    min-width: 160px;
+    justify-content: center;
+}
+
+/* Facebook button */
+.social-button.facebook {
+    background-color: #1877f2;
+    color: white;
+    border: 2px solid #1877f2;
+}
+
+.social-button.facebook:hover {
+    background-color: white;
+    color: #1877f2;
+}
+
+/* Instagram button */
+.social-button.instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+    border: 2px solid transparent;
+}
+
+.social-button.instagram:hover {
+    background: white;
+    color: #dc2743;
+    border-color: #dc2743;
+}
+
+/* TikTok button */
+.social-button.tiktok {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 2px solid #000000;
+}
+
+.social-button.tiktok:hover {
+    background-color: white;
+    color: #000000;
+}
+
+/* Efectos comunes para todos los botones */
+.social-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.social-button i {
+    font-size: 1.2em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .social-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .social-button {
+        width: 80%;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-title {
+        font-size: 1.5em;
+    }
+
+    .social-button {
+        width: 100%;
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+}
+
+/* Animación para los botones */
+@keyframes buttonPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.social-button:active {
+    animation: buttonPulse 0.3s ease-in-out;
+}
+
 
         /* Responsive */
         @media (max-width: 768px) {
@@ -892,7 +1001,7 @@ nav {
 }
 
 .cart-count {
-    background-color: #your-color;
+    background-color: black;
 }
 
 .cart-icon a {
@@ -904,20 +1013,10 @@ nav {
 }
 
 body {
-  background: linear-gradient(135deg, #FDF6E3 0%, #F5E6D3 100%);
+  background: linear-gradient(135deg, #000000 0%, #11100f 100%);
   min-height: 100vh;
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-    </style>
+</style>
